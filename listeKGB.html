@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des missions - KGB</title>
+  <style>
+    /* Styles CSS */
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #filters {
+      margin-bottom: 10px;
+    }
+
+    #filters select {
+      margin-right: 10px;
+    }
+
+    #search input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    #missions-list {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .mission {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .mission h2 {
+      margin-top: 0;
+    }
+
+    #pagination {
+      text-align: center;
+    }
+
+    #pagination a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 5px 10px;
+      background-color: #eee;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #pagination a.current {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gestion des missions - KGB</h1>
+
+    <div id="filters">
+      <select>
+        <option value="all">Toutes les missions</option>
+        <option value="surveillance">Surveillance</option>
+        <option value="assassinat">Assassinat</option>
+        <option value="infiltration">Infiltration</option>
+      </select>
+      <select>
+        <option value="newest">Plus récentes</option>
+        <option value="oldest">Plus anciennes</option>
+      </select>
+    </div>
+
+    <div id="search">
+      <input type="text" placeholder="Rechercher une mission...">
+    </div>
+
+    <div id="missions-list">
+      <div class="mission">
+        <h2>Opération Alpha</h2>
+        <p><strong>Type:</strong> Infiltration</p>
+        <p><strong>Agents:</strong> Agent 1, Agent 2</p>
+        <p><strong>Contacts:</strong> Contact 1, Contact 2</p>
+        <p><strong>Cibles:</strong> Cible 1, Cible 2</p>
+        <p><strong>Statut:</strong> En cours</p>
+      </div>
+
+      <div class="mission">
+        <h2>Opération Bravo</h2>
+        <p><strong>Type:</strong> Surveillance</p>
+        <p><strong>Agents:</strong> Agent 3, Agent 4</p>
+        <p><strong>Contacts:</strong> Contact 3, Contact 4</p>
+        <p><strong>Cibles:</strong> Cible 3, Cible 4</p>
+        <p><strong>Statut:</strong> Terminée</p>
+      </div>
+
+      <!-- Ajoutez plus de missions ici -->
+
+    </div>
+
+    <div id="pagination">
+      <a href="#" class="current">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <!-- Ajoutez plus de liens de pagination ici -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Code JavaScript avec AJAX
+    // ...
+  </script>
+</body>
+</html>
